@@ -13,7 +13,7 @@ Table of Contents:
 2.3. Configuring Kibana
 
 3. Deploying EFK Components on Kubernetes
-4. 
+   
 3.1. Creating a Namespace
 3.2. Deploying Elasticsearch
 3.3. Setting up Fluentd
