@@ -11,14 +11,15 @@ Table of Contents:
 2.1. Installing Elasticsearch
 2.2. Setting up Fluentd
 2.3. Configuring Kibana
-\3. Deploying EFK Components on Kubernetes
+
+3.Deploying EFK Components on Kubernetes
    
 3.1. Creating a Namespace
 3.2. Deploying Elasticsearch
 3.3. Setting up Fluentd
 3.4. Deploying Kibana
 
-Configuring Fluentd to Collect and Forward Logs
+4.Configuring Fluentd to Collect and Forward Logs
 
 4.1. Fluentd ConfigMap
 4.2. Fluentd DaemonSet
