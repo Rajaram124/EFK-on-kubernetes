@@ -35,8 +35,7 @@ subjects:
 - kind: ServiceAccount
   name: fluentd
   namespace: kube-logging
-
-
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
