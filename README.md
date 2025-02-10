@@ -1,5 +1,10 @@
 # EFK-on-kubernetes
 
+Pre-requisites:
+Install CSI DRIVER to create EBS volumes (pv) automatically - eksctl create addon --name aws-ebs-csi-driver --cluster main-eks --region us-west-1 
+
+steps to deploy:
+
 Introduction: 
 In the world of modern application development, efficient log management and analysis are crucial for ensuring the health and stability of your Kubernetes infrastructure. Elastic Stack, often referred to as EFK (Elasticsearch, Fluentd, and Kibana), is a powerful open-source solution that provides a robust logging and monitoring platform. In this blog post, we will walk you through the process of deploying EFK on Kubernetes, enabling you to centralize logs, gain valuable insights, and troubleshoot issues effectively.
 
