@@ -1,7 +1,29 @@
 # EFK-on-kubernetes
 
-Pre-requisites:
-Install CSI DRIVER to create EBS volumes (pv) automatically - eksctl create addon --name aws-ebs-csi-driver --cluster main-eks --region us-west-1 
+Pre-requisites: Install EKS ctl :
+-------------------
+$ cat script.sh 
+
+ARCH=amd64
+
+PLATFORM=$(uname -s)_$ARCH
+
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
+
+sudo mv /tmp/eksctl /usr/local/bin
+
+---------------------
+# Install CSI DRIVER to create EBS volumes (pv) automatically - 
+
+$eksctl create addon --name aws-ebs-csi-driver --cluster main-eks --region us-west-1
+
+$kubectl get csidrivers
+
+---------------------
 
 steps to deploy:
 
