@@ -71,7 +71,7 @@ spec:
         app: elasticsearch
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      # storageClassName: local-storage
+      storageClassName: gp2
       resources:
         requests:
           storage: 1Gi
