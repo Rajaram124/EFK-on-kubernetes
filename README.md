@@ -30,5 +30,3 @@ Visualizing and Analyzing Logs with Kibana
 5.1. Accessing the Kibana Dashboard
 5.2. Index Patterns and Data Visualization
 5.3. Building Dashboards and Visualizations
-
-Youtube tutorial link - https://youtu.be/rnKNfLArS7M
