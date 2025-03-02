@@ -25,7 +25,13 @@ $kubectl get csidrivers
 
 ---------------------
 
-first create namespaces using ns.yml, then deploy the remain code
+first create namespaces using ns.yml
+
+MongoDB:
+
+before deploying mongo db and svc,
+
+first deploy storage class and then pvc then apply the statefulset and service.
 
 steps to deploy:
 
