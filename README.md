@@ -1,7 +1,7 @@
 # EFK-on-kubernetes
 
-Pre-requisites: Install EKS ctl :
--------------------
+Pre-requisites: Install EKS ctl:
+-------------------------------
 $ cat script.sh 
 
 ARCH=amd64
@@ -25,15 +25,16 @@ $kubectl get csidrivers
 
 ---------------------
 
+first create namespaces using ns.yml, then deploy the remain code
+
 steps to deploy:
 
 Introduction: 
 In the world of modern application development, efficient log management and analysis are crucial for ensuring the health and stability of your Kubernetes infrastructure. Elastic Stack, often referred to as EFK (Elasticsearch, Fluentd, and Kibana), is a powerful open-source solution that provides a robust logging and monitoring platform. In this blog post, we will walk you through the process of deploying EFK on Kubernetes, enabling you to centralize logs, gain valuable insights, and troubleshoot issues effectively.
 
 Table of Contents:
-1.What is EFK and Why Should You Use It?
 
-2.Preparing Your Kubernetes Cluster for EFK Deployment
+1.Preparing Your Kubernetes Cluster for EFK Deployment
 
 2.1. Installing Elasticsearch
 2.2. Setting up Fluentd
