@@ -1,0 +1,8 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: ebs-gp2  # Name of the StorageClass
+provisioner: kubernetes.io/aws-ebs  # Provisioner for AWS EBS
+parameters:
+  type: gp2  # Volume type: gp2 (General Purpose SSD)
+  fsType: ext4 
